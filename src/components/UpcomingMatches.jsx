@@ -158,6 +158,26 @@ export default function UpcomingMatches({ onSelect }) {
                     className={upcomingMatchesStyles.matchArticle}
                     aria-label={`Upcoming match ${m.team1.name} vs ${m.team2.name}`}
                   >
+
+                          <div className={upcomingMatchesStyles.teamsContainer}>
+                        <div className={upcomingMatchesStyles.teamContainer}>
+                          <Flag name={m.team1.name} />
+                          <div className="min-w-0">
+                            <div className={upcomingMatchesStyles.teamName}>{m.team1.name}</div>
+                            <div className={upcomingMatchesStyles.teamStatus}>Upcoming</div>
+                          </div>
+                        </div>
+
+                        <div className={upcomingMatchesStyles.vsText}>vs</div>
+
+                        <div className={upcomingMatchesStyles.teamContainerReversed}>
+                          <div className="text-right min-w-0">
+                            <div className={upcomingMatchesStyles.teamName}>{m.team2.name}</div>
+                            <div className={upcomingMatchesStyles.teamStatus}>{m.venue || ''}</div>
+                          </div>
+                          <Flag name={m.team2.name} />
+                        </div>
+                      </div>
                     
 
                     {/* hover ring */}
