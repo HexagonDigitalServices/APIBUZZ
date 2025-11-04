@@ -200,6 +200,36 @@ export default function LiveMatch({ onSelect }) {
       </div>
     );
   }
-
-
 }
+
+
+
+
+
+    <div className={liveMatchStyles.teamsContainer}>
+                  <div className={liveMatchStyles.teamContainer}>
+                    <FlagAndLabel flagObj={m.teamA.flag} fallbackLabel={m.teamA.name} />
+                    <div className="min-w-0">
+                      <div className={liveMatchStyles.teamName}>{m.teamA.name}</div>
+                      <div className={liveMatchStyles.teamScore}>{m.teamA.score || ''}</div>
+                    </div>
+                  </div>
+
+                  <div className={liveMatchStyles.vsText}>vs</div>
+
+                  <div className={liveMatchStyles.teamContainerReversed}>
+                    <div className="text-right min-w-0">
+                      <div className={liveMatchStyles.teamName}>{m.teamB.name}</div>
+                      <div className={liveMatchStyles.teamScore}>{m.teamB.score || ''}</div>
+                    </div>
+                    <FlagAndLabel flagObj={m.teamB.flag} fallbackLabel={m.teamB.name} />
+                  </div>
+                </div>
+
+   <div
+                className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                style={{ boxShadow: '0 6px 20px rgba(59,130,246,0.12)' }}
+              />
+
+
+

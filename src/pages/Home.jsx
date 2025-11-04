@@ -125,13 +125,9 @@ export default function Home() {
 
 
 <>
-                {/* left: heading & CTAs */}
-                  <div className={homeStyles.heroFeatures}>
-                    <div className={homeStyles.featureTag}>Live scorecards</div>
-                    <div className={homeStyles.featureTag}>Match detail</div>
-                    <div className={homeStyles.featureTag}>Team stats</div>
-      </div>
+style={{ fontFamily: "'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" }}
 
+  —
             {/* subtle outer border/shadow */}
             <div className={homeStyles.heroShadow} style={{ boxShadow: '0 8px 30px rgba(14, 30, 50, 0.06)', borderRadius: '24px' }} />
     
