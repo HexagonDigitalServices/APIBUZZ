@@ -1,4 +1,3 @@
-
 export default function MatchDetail({ matchId, className = '' }) {
   const [center, setCenter] = useState(null);
   const [scard, setScard] = useState(null);
@@ -144,8 +143,6 @@ export default function MatchDetail({ matchId, className = '' }) {
   })();
 
   const matchTitle = (center && (center.match?.title || center.series || center.title)) || (hscard && (hscard.matchHeader?.matchDescription || hscard.matchHeader?.matchDesc)) || `Match ${matchId}`;
-
-
 
 
 
